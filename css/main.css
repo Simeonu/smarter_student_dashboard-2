@@ -10,6 +10,7 @@ body{
     margin: 0;
     max-height: 100vh;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: hidden;
 }
 
 /* for all Scrolls */
@@ -32,11 +33,10 @@ body{
     background-color: var(--primary-color);
     width: 5%;
     height: 75px;
-    text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 12px;
+    justify-content: center;
+
 }
 
 .logo span{
@@ -66,7 +66,7 @@ body{
 
 .main__section{
     width: 100%;
-    height:calc(100vh - 75px);
+    height:calc(100vh - 150px);
     display: flex;
 
 }
@@ -78,7 +78,7 @@ body{
 .links{
     background-color: var(--primary-color);
     width: 5%;
-    height:calc(100vh - 75px);
+    height:calc(100vh - 150px);
     text-align: center;
     display: flex;
     justify-content:flex-start;
@@ -95,22 +95,32 @@ body{
 }
 
 .right__container{
-    height: calc(100vh - 75px);
+    max-height: calc(100vh - 150px);
     width: 95%;
     display: flex;
+
 }
 
 .uni__degree{
     width: 25%;
-    max-height:calc(100vh - 75px);
+    /* height: 100%; */
+    /* max-height:calc(100vh - 75px); */
     /* overflow-y: scroll; */
 }
 
 .school__design{
     width: 70%;
-    max-height:calc(100vh - 75px);
-    
+    max-height:calc(100vh - 150px);
+    /* overflow-y: scroll; */
 }
+
+
+.card__container{
+    width: 100%;
+    max-height:calc(100vh - 150px);
+    overflow-y: scroll;
+}
+
 
 
 
@@ -121,8 +131,8 @@ body{
 }
 
 .uni__inner__content{
-    width: 100%;
-    max-height:calc(100vh - 75px);
+    width: 100%; 
+    max-height:100vh;
     overflow-y: scroll;
 }
 
@@ -135,7 +145,6 @@ body{
 .inner__item{
     height: 75px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -300,3 +309,14 @@ input[type=range]::-webkit-slider-runnable-track {
 
 
 
+.footer{
+    height:70px;
+    background-color:rgb(37, 11, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    width: 100%;
+    position: absolute;
+    bottom: 0; 
+}
